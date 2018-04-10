@@ -1,7 +1,12 @@
 (provide 'maf-core)
 
-(setq user-full-name "Matt Field"
-      user-mail-address "matt.field@elastic.co")
+(setq user-full-name
+      (replace-regexp-in-string "\n$" "" (shell-command-to-string
+                                          "git config --get user.name")))
+
+(setq user-mail-address
+      (replace-regexp-in-string "\n$" "" (shell-command-to-string
+                                          "git config --get user.email")))
 
 (set-charset-priority 'unicode)
 (set-default-coding-systems 'utf-8)
