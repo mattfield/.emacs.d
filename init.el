@@ -50,6 +50,7 @@
 (try-load 'maf-core)
 (try-load 'maf-appearance)
 (try-load 'maf-navigation)
+(try-load 'maf-writing)
 (try-load 'maf-ivy)
 (try-load 'maf-git)
 (try-load 'maf-org)
