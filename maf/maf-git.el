@@ -2,7 +2,6 @@
 
 (use-package git-gutter
   :ensure t
-  :when window-system
   :defer t
   :bind (("C-x P" . git-gutter:previous-hunk)
          ("C-x N" . git-gutter:next-hunk)

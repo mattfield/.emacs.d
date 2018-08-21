@@ -55,6 +55,8 @@
 (try-load 'maf-git)
 (try-load 'maf-org)
 (try-load 'maf-scala)
+(try-load 'maf-infra)
+(try-load 'maf-es)
 
 (setq initial-scratch-message ";; ╔═╗┌─┐┬─┐┌─┐┌┬┐┌─┐┬ ┬\n;; ╚═╗│  ├┬┘├─┤ │ │  ├─┤\n;; ╚═╝└─┘┴└─┴ ┴ ┴ └─┘┴ ┴\n")
 
